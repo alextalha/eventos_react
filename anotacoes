@@ -1,0 +1,52 @@
+
+Aula 3
+=========
+
+
+o react renderiza dentro da div "root" que está dentro do index.html pela chamado do render dentro do index.js dentro de src 
+
+
+
+
+outros 
+=======
+verificar este vídeo 
+
+
+
+
+
+
+
+
+
+Aula 2 e 1 
+============================
+
+
+npx create-react-app eventos
+
+npx 
+https://walde.co/2018/02/15/conhecendo-o-npx-o-package-runner-npm/
+
+
+react 
+https://pt-br.reactjs.org/docs/getting-started.html
+
+criado .env na raiz com essa variavel 
+
+SKIP_PREFLIGHT_CHECK=true
+
+
+Prettier  melhorando o código 
+===============================
+//verificação se o código está batendo com as regras que setamos
+yarn add eslint -D
+
+yarn run eslint --init 
+
+lembrar de colocar o formato JSON na configuração da instalação 
+
+
+https://www.youtube.com/watch?v=TI4v4Y8yRjw
+
