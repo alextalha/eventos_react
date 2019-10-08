@@ -1,4 +1,15 @@
 
+8. Deixando as mensagens da tela de login dinâmica
+
+
+https://pt-br.reactjs.org/docs/conditional-rendering.html
+
+&& => igual a "então faça" no jsx
+
+
+===============================================================
+
+
 7. Autenticação de usuário com
 Firebase
 
@@ -10,6 +21,8 @@ useState => grava o estado do componente
 funcao de arrow function , funcao que se auto executa 
 
 verificar mais sobre o componente do react useState
+
+
 
 ===============================================================================
 
