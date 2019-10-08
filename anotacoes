@@ -1,28 +1,29 @@
 
+Aula 4 
+==========
+4. Criando a View de Login da
+aplicação
+
+view/index.js
+
+importar o react
+
+
+
+
+
 Aula 3
 =========
 
-
 o react renderiza dentro da div "root" que está dentro do index.html pela chamado do render dentro do index.js dentro de src 
 
+**** outros  ******
 
-
-
-outros 
-=======
 verificar este vídeo 
-
-
-
-
-
-
-
 
 
 Aula 2 e 1 
 ============================
-
 
 npx create-react-app eventos
 
