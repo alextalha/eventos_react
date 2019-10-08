@@ -1,3 +1,22 @@
+6. Integração do Firebase em
+nossa aplicação
+
+
+https://firebase.google.com/docs
+
+
+Instalar o modulo para se conectar ao firebase
+
+npm install firebase
+
+criaremos uma pasta dentro de src para colocar a config ao firebase
+
+
+
+==============================================================
+
+
+
 
 5. Desenvolvendo o Layout da Tela
 de Login
@@ -10,6 +29,10 @@ JSX não é HTML é uma sintaxe similar
 
 verificar sobre vh do css 
 verificar o spacing do bootstrap my-2 por exemplo 
+
+
+
+https://www.w3schools.com/charsets/ref_utf_symbols.asp
 
 
 ==============================================================================================
