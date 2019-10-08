@@ -1,3 +1,19 @@
+
+7. Autenticação de usuário com
+Firebase
+
+Vamos configurar o método de login  no firebase 
+
+
+useState => grava o estado do componente 
+
+funcao de arrow function , funcao que se auto executa 
+
+verificar mais sobre o componente do react useState
+
+===============================================================================
+
+
 6. Integração do Firebase em
 nossa aplicação
 
