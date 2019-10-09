@@ -84,12 +84,12 @@ function UsuarioNovo() {
           </div>
         ) : (
           <div className="msg-login text-black text-center my-5">
-            {msgTipo == "sucesso" && (
+            {msgTipo === "sucesso" && (
               <span>
                 <strong>WoW!</strong> Você está conectado! &#128526;
               </span>
             )}
-            {msgTipo == "erro" && (
+            {msgTipo === "erro" && (
               <span>
                 <strong>Ops!</strong> {msg} &#128546;
               </span>
