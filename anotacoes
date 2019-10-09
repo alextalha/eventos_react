@@ -1,3 +1,26 @@
+11. Desenvolvimento da página
+home e componente navbar
+
+
+Criaremos a rota de home na view 
+
+Componentização, criar componente e habilitar em diversos lugares. facilitando a manutenção 
+
+
+Usaremos o icone de expansão do menu no mobile 
+https://fontawesome.com/icons/bars
+
+colocaremos o componente de navbar em todas as rotas com seus respectivos links 
+
+O retorno de uma função dentro de uma view no react pela regra deverá trazer apenas uma coisa,
+ entretanto para adicionarmos um componente precisamos trabalhar com fragment, que nada mais é
+ do que forçar trazer mais deuma coisa no return;
+
+ <>
+    funcionalidade aqui dentro
+ </>
+
+==============================================================================================
 
 
 10. Definindo rotas e navegação

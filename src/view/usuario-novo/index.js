@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./usuario-novo.css";
-
+import Navbar from "../../componentes/navbar";
 import firebase from "../../config/firebase";
 import "firebase/auth";
 
@@ -50,54 +50,57 @@ function UsuarioNovo() {
   }
 
   return (
-    <div className="form-cadastro">
-      <form className="text-center form-login mx-auto mt-5">
-        <h1 className="h3 mb-3 text-black font-weight-bold">Cadastro</h1>
+    <>
+      <Navbar />
+      <div className="form-cadastro">
+        <form className="text-center form-login mx-auto mt-5">
+          <h1 className="h3 mb-3 text-black font-weight-bold">Cadastro</h1>
 
-        <input
-          onChange={e => setEmail(e.target.value)}
-          type="email"
-          id="inputEmail"
-          className="form-control my-2"
-          placeholder="Email"
-        />
+          <input
+            onChange={e => setEmail(e.target.value)}
+            type="email"
+            id="inputEmail"
+            className="form-control my-2"
+            placeholder="Email"
+          />
 
-        <input
-          onChange={e => setSenha(e.target.value)}
-          type="password"
-          id="inputPassword"
-          className="form-control my-2"
-          placeholder="Senha"
-        />
+          <input
+            onChange={e => setSenha(e.target.value)}
+            type="password"
+            id="inputPassword"
+            className="form-control my-2"
+            placeholder="Senha"
+          />
 
-        <button
-          onClick={cadastrar}
-          className="btn btn-lg btn-login btn-block mt-3 mb-5 btn-cadastro"
-          type="button"
-        >
-          Cadastrar
-        </button>
+          <button
+            onClick={cadastrar}
+            className="btn btn-lg btn-login btn-block mt-3 mb-5 btn-cadastro"
+            type="button"
+          >
+            Cadastrar
+          </button>
 
-        {carregando ? (
-          <div class="spinner-border text-danger" role="status">
-            <span class="sr-only">Loading...</span>
-          </div>
-        ) : (
-          <div className="msg-login text-black text-center my-5">
-            {msgTipo === "sucesso" && (
-              <span>
-                <strong>WoW!</strong> Você está conectado! &#128526;
-              </span>
-            )}
-            {msgTipo === "erro" && (
-              <span>
-                <strong>Ops!</strong> {msg} &#128546;
-              </span>
-            )}
-          </div>
-        )}
-      </form>
-    </div>
+          {carregando ? (
+            <div class="spinner-border text-danger" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          ) : (
+            <div className="msg-login text-black text-center my-5">
+              {msgTipo === "sucesso" && (
+                <span>
+                  <strong>WoW!</strong> Você está conectado! &#128526;
+                </span>
+              )}
+              {msgTipo === "erro" && (
+                <span>
+                  <strong>Ops!</strong> {msg} &#128546;
+                </span>
+              )}
+            </div>
+          )}
+        </form>
+      </div>
+    </>
   );
 }
 
