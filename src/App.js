@@ -1,5 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Provider } from "react-redux";
+
+import store from "../src/store/";
 
 /* Páginas */
 
@@ -9,11 +12,13 @@ import Home from "../src/view/home";
 
 function App() {
   return (
-    <Router>
-      <Route path="/login" exact={true} component={Login} />
-      <Route path="/usuarioNovo" exact={true} component={UsuarioNovo} />
-      <Route path="/" exact={true} component={Home} />
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <Route path="/login" exact={true} component={Login} />
+        <Route path="/usuarioNovo" exact={true} component={UsuarioNovo} />
+        <Route path="/" exact={true} component={Home} />
+      </Router>
+    </Provider>
   );
 }
 

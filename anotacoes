@@ -1,3 +1,43 @@
+12. Usando o Redux em nossa aplicação
+
+Sobre o Redux 
+
+Trabalhando com estado do componente de forma global e não por componente
+
+exemplo 
+Action ------> Reducer (Login | Logout ) ------> guarda o estado  ---> avisa na tela
+
+instalando o Redux
+
+npm install react-redux
+npm install redux
+
+verificar sobre tag de fragment 
+
+
+O Redux é um biblioteca do Facebook independente d React que manipula o estado global do store de sua aplicação 
+
+Biblioteca de Armazenamento de estado
+
+Store é imutavel 
+Transactions => 
+Reducers
+
+Os estados são apenas leitura apenas alterados por suas actions
+
+https://redux.js.org/basics/basic-tutorial
+
+react-Redux
+
+useSelector => utilizado pra verificar o estado do store do usuário 
+useDispatch => usado para enviar as solicitações
+
+
+=======================================================================================================
+
+
+
+
 11. Desenvolvimento da página
 home e componente navbar
 
