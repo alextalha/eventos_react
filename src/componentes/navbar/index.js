@@ -44,7 +44,7 @@ function Navbar() {
           ) : (
             <>
               <li className="nav-item">
-                <Link className="nav-link" to="#">
+                <Link className="nav-link" to="/evento-cadastro">
                   Publicar Evento
                 </Link>
               </li>
