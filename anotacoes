@@ -1,3 +1,26 @@
+19 - cadastro de Evento com firestore do Firebase
+
+
+
+As imagens do formulario do castro de evento será armazenados no storage do firebase e 
+o link no banco do firestore
+
+cadastramos um storage e pegamos o endpoint dele para inserir no script  do firebaseConfig
+
+=====================================================================================
+
+
+
+18 - Criação e configuração do banco firestore
+
+Configurando o firestore 
+um banco não relacional do firebase . 
+usando o conceito de  coleção e documento 
+
+
+====================================================================================
+
+
 12. Usando o Redux em nossa aplicação
 
 Sobre o Redux 
