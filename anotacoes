@@ -1,5 +1,28 @@
-19 - cadastro de Evento com firestore do Firebase
+20. Desenvolvendo o componente evento e barra de pesquisa
 
+// para gerar as imagens de placeholder;
+https://placeholder.com/
+
+
+criaremos um novo componente evento-card
+
+useEffect = 
+
+
+* Chamaremos o evento-card no index da home 
+
+*usaremos um placeholder de imagem
+
+
+
+===================================================================================
+
+
+
+
+
+
+19 - cadastro de Evento com firestore do Firebase
 
 
 As imagens do formulario do castro de evento será armazenados no storage do firebase e 

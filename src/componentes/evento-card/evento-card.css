@@ -1,0 +1,28 @@
+.rodape-card {
+    color: #614ea6;
+    height: 35px;
+}
+
+
+.btn-detalhes {
+    background: #614ea6;
+    color: #FFF;
+}
+
+.btn-detalhes:hover {
+    background: #f21667;
+    color: #FFF;
+}
+
+
+.card-text {
+    max-height: 100px;
+    overflow: hidden;
+
+}
+
+.img-cartao {
+    max-height: 200px;
+    max-width: 100%;
+
+}
