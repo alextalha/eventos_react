@@ -8,7 +8,7 @@ function Navbar() {
 
   return (
     <nav className="navbar navbar-expand-lg">
-      <i class="far fa-smile-wink text-white fa-2x ml-4"></i>
+      <i className="far fa-smile-wink text-white fa-2x ml-4"></i>
       <button
         className="navbar-toggler"
         type="button"

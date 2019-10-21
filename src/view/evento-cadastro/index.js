@@ -131,8 +131,8 @@ function EventoCadastro() {
 
           <div className="row">
             {carregando > 0 ? (
-              <div class="spinner-border text-danger mx-auto" role="status">
-                <span class="sr-only">Loading...</span>
+              <div className="spinner-border text-danger mx-auto" role="status">
+                <span className="sr-only">Loading...</span>
               </div>
             ) : (
               <button
