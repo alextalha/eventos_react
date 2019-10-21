@@ -8,6 +8,7 @@ import firebase from "../../config/firebase";
 
 function Home() {
   const [eventos, setEventos] = useState([]);
+  const [pesquisa, setPesquisa] = useState("");
   let listaeventos = [];
 
   useEffect(() => {
@@ -17,22 +18,35 @@ function Home() {
       .get()
       .then(async resultado => {
         await resultado.docs.forEach(doc => {
-          listaeventos.push({
-            id: doc.id,
-            ...doc.data() //spreed
-          });
+          if (doc.data().titulo.indexOf(pesquisa) >= 0) {
+            listaeventos.push({
+              id: doc.id,
+              ...doc.data() //spreed
+            });
+          }
         });
+        console.log(listaeventos);
         setEventos(listaeventos);
       });
-  }, []);
+  });
+
   return (
     <>
       <Navbar />
+
+      <div className="row p-5">
+        <input
+          onChange={e => setPesquisa(e.target.value)}
+          type="text"
+          className="text-center form-control"
+          placeholder="Pesquisar evento pelo título ...."
+        />
+      </div>
       <div className="row p-3">
         {eventos.map(item => (
           <EventoCard
-            id={item.id.toString()}
-            img={item.foto}
+            key={item.id}
+            foto={item.foto}
             titulo={item.titulo}
             descricao={item.descricao}
             visualizacoes={item.visualizacoes}

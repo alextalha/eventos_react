@@ -2,7 +2,13 @@
 
 useEffects => chamado para carregar logo que carregar a página 
 
+a imagem carrengand  apenas uma vez . o useeffect do cartão , ele é convocado quando o cartão é carregado 
 
+como forçar ele renderizar novamente?
+
+useEffect( () => {
+
+}, [urlImagem]) // chamando a variavel do state ele carrega novamente 
 
 20. Desenvolvendo o componente evento e barra de pesquisa
 

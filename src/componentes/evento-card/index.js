@@ -3,18 +3,18 @@ import { Link } from "react-router-dom";
 import firebase from "../../config/firebase";
 import "./evento-card.css";
 
-function EventoCard({ id, img, titulo, descricao, visualizacoes }) {
+function EventoCard({ id, foto, titulo, descricao, visualizacoes }) {
   const [urlImagem, setUrlImagem] = useState();
 
   useEffect(() => {
     firebase
       .storage()
-      .ref(`imagens/${img}`)
+      .ref(`imagens/${foto}`)
       .getDownloadURL()
       .then(url => {
         setUrlImagem(url);
       });
-  }, []);
+  }, [urlImagem]);
 
   return (
     <div className="col-md-3 col-sm-12">
