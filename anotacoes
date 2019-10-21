@@ -2,6 +2,10 @@
 
 useEffects => chamado para carregar logo que carregar a página 
 
+
+https://pt-br.reactjs.org/docs/hooks-effect.html
+
+
 a imagem carrengand  apenas uma vez . o useeffect do cartão , ele é convocado quando o cartão é carregado 
 
 como forçar ele renderizar novamente?
