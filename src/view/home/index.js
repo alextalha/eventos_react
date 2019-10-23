@@ -6,28 +6,50 @@ import Navbar from "../../componentes/navbar";
 import EventoCard from "../../componentes/evento-card";
 import firebase from "../../config/firebase";
 
-function Home() {
+function Home({ match }) {
   const [eventos, setEventos] = useState([]);
   const [pesquisa, setPesquisa] = useState("");
   let listaeventos = [];
+  const usuarioEmail = useSelector(state => state.usuarioEmail);
 
   useEffect(() => {
-    firebase
-      .firestore()
-      .collection("eventos")
-      .get()
-      .then(async resultado => {
-        await resultado.docs.forEach(doc => {
-          if (doc.data().titulo.indexOf(pesquisa) >= 0) {
-            listaeventos.push({
-              id: doc.id,
-              ...doc.data() //spreed
-            });
-          }
+    if (match.params.parametro) {
+      // filtrar apenas os meus
+      firebase
+        .firestore()
+        .collection("eventos")
+        .where("usuario", "==", usuarioEmail)
+        .get()
+        .then(async resultado => {
+          await resultado.docs.forEach(doc => {
+            if (doc.data().titulo.indexOf(pesquisa) >= 0) {
+              listaeventos.push({
+                id: doc.id,
+                ...doc.data() //spreed
+              });
+            }
+          });
+
+          setEventos(listaeventos);
         });
-        console.log(listaeventos);
-        setEventos(listaeventos);
-      });
+    } else {
+      firebase
+        .firestore()
+        .collection("eventos")
+        .get()
+        .then(async resultado => {
+          await resultado.docs.forEach(doc => {
+            if (doc.data().titulo.indexOf(pesquisa) >= 0) {
+              listaeventos.push({
+                id: doc.id,
+                ...doc.data() //spreed
+              });
+            }
+          });
+
+          setEventos(listaeventos);
+        });
+    }
   });
 
   return (
@@ -35,6 +57,7 @@ function Home() {
       <Navbar />
 
       <div className="row p-5">
+        <h2 className="mx-auto p-5">Eventos Publicados</h2>
         <input
           onChange={e => setPesquisa(e.target.value)}
           type="text"
